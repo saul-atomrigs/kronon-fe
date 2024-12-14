@@ -1,0 +1,14 @@
+{
+  "symbol": "BTCUSDT",
+  "price": 102147.05,
+  "24hChange": {
+    "amount": 2449.03,
+    "percentage": 2.46
+  },
+  "24hHigh": 102650.0,
+  "24hLow": 99500.0,
+  "24hVolume": {
+    "BTC": 22865.1,
+    "USDT": 2308738673.98
+  }
+}
