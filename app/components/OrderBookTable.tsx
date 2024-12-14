@@ -9,7 +9,13 @@ const fetchOrderBookData = async () => {
   });
 };
 
-const OrderBookComponent: React.FC = () => {
+interface OrderBookComponentProps {
+  onPriceSelect: (price: number) => void;
+}
+
+const OrderBookComponent: React.FC<OrderBookComponentProps> = ({
+  onPriceSelect,
+}) => {
   const [data, setData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -36,6 +42,10 @@ const OrderBookComponent: React.FC = () => {
     lastPrice: 0,
   };
 
+  const handleRowClick = (price: number) => {
+    onPriceSelect(price);
+  };
+
   return (
     <div className='bg-gray-900 text-white p-4 w-80 mx-auto font-mono'>
       <h2 className='text-lg font-bold mb-2'>Order Book</h2>
@@ -47,7 +57,11 @@ const OrderBookComponent: React.FC = () => {
       {/* Asks */}
       <div className='text-red-400 mb-2'>
         {asks.map((ask, index) => (
-          <div key={index} className='grid grid-cols-3 gap-x-2'>
+          <div
+            key={index}
+            className='grid grid-cols-3 gap-x-2 cursor-pointer hover:bg-gray-800'
+            onClick={() => handleRowClick(ask.price)}
+          >
             <div>{ask.price.toFixed(2)}</div>
             <div>{ask.amount.toFixed(5)}</div>
             <div>{ask.total.toFixed(2)}K</div>
@@ -61,7 +75,11 @@ const OrderBookComponent: React.FC = () => {
       {/* Bids */}
       <div className='text-green-400'>
         {bids.map((bid, index) => (
-          <div key={index} className='grid grid-cols-3 gap-x-2'>
+          <div
+            key={index}
+            className='grid grid-cols-3 gap-x-2 cursor-pointer hover:bg-gray-800'
+            onClick={() => handleRowClick(bid.price)}
+          >
             <div>{bid.price.toFixed(2)}</div>
             <div>{bid.amount.toFixed(5)}</div>
             <div>{bid.total.toFixed(2)}K</div>
