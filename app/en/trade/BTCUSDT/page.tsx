@@ -10,8 +10,10 @@ export default function Page() {
   return (
     <>
       <CurrentInfoTable />
-      <OrderBookComponent onPriceSelect={setSelectedPrice} />
-      <BuySellTable selectedPrice={selectedPrice} />
+      <div className='flex justify-center items-start gap-4'>
+        <OrderBookComponent onPriceSelect={setSelectedPrice} />
+        <BuySellTable selectedPrice={selectedPrice} />
+      </div>
     </>
   );
 }
