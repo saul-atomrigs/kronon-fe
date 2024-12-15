@@ -1,0 +1,137 @@
+[
+  {
+    "pair": "BTC/USDT",
+    "price": "43000.00",
+    "change": "2.19%"
+  },
+  {
+    "pair": "ETH/USDT",
+    "price": "2300.50",
+    "change": "3.75%"
+  },
+  {
+    "pair": "BNB/USDT",
+    "price": "315.00",
+    "change": "1.42%"
+  },
+  {
+    "pair": "XRP/USDT",
+    "price": "0.67",
+    "change": "-0.85%"
+  },
+  {
+    "pair": "ADA/USDT",
+    "price": "0.45",
+    "change": "1.02%"
+  },
+  {
+    "pair": "SOL/USDT",
+    "price": "98.20",
+    "change": "4.67%"
+  },
+  {
+    "pair": "DOT/USDT",
+    "price": "6.32",
+    "change": "-1.18%"
+  },
+  {
+    "pair": "DOGE/USDT",
+    "price": "0.092",
+    "change": "0.54%"
+  },
+  {
+    "pair": "MATIC/USDT",
+    "price": "0.95",
+    "change": "2.23%"
+  },
+  {
+    "pair": "LTC/USDT",
+    "price": "75.10",
+    "change": "1.68%"
+  },
+  {
+    "pair": "AVAX/USDT",
+    "price": "40.20",
+    "change": "-0.92%"
+  },
+  {
+    "pair": "TRX/USDT",
+    "price": "0.12",
+    "change": "0.43%"
+  },
+  {
+    "pair": "ATOM/USDT",
+    "price": "12.10",
+    "change": "-2.34%"
+  },
+  {
+    "pair": "SHIB/USDT",
+    "price": "0.0000087",
+    "change": "1.75%"
+  },
+  {
+    "pair": "LINK/USDT",
+    "price": "15.90",
+    "change": "3.12%"
+  },
+  {
+    "pair": "UNI/USDT",
+    "price": "7.32",
+    "change": "-0.45%"
+  },
+  {
+    "pair": "BCH/USDT",
+    "price": "210.50",
+    "change": "2.89%"
+  },
+  {
+    "pair": "ALGO/USDT",
+    "price": "0.25",
+    "change": "1.01%"
+  },
+  {
+    "pair": "FIL/USDT",
+    "price": "5.30",
+    "change": "-0.67%"
+  },
+  {
+    "pair": "VET/USDT",
+    "price": "0.029",
+    "change": "0.92%"
+  },
+  {
+    "pair": "APT/USDT",
+    "price": "8.10",
+    "change": "3.77%"
+  },
+  {
+    "pair": "ARB/USDT",
+    "price": "1.42",
+    "change": "-1.12%"
+  },
+  {
+    "pair": "OP/USDT",
+    "price": "2.10",
+    "change": "1.88%"
+  },
+  {
+    "pair": "IMX/USDT",
+    "price": "1.56",
+    "change": "4.12%"
+  },
+  {
+    "pair": "SUI/USDT",
+    "price": "1.08",
+    "change": "0.75%"
+  },
+  {
+    "pair": "FTM/USDT",
+    "price": "0.35",
+    "change": "-0.23%"
+  },
+  {
+    "pair": "RNDR/USDT",
+    "price": "4.50",
+    "change": "5.20%"
+  }
+]
