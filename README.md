@@ -5,13 +5,19 @@
 git clone https://github.com/saul-atomrigs/kronon-fe-binance-clone.git
 ```
 
-2. 로컬에서 실행합니다
+2. Dependencies 설치
+
+```
+yarn
+```
+
+3. 로컬에서 실행합니다
 
 ```
 yarn dev
 ```
 
-3. 브라우저에서 로컬호스트 3000포트로 진입한 후, http://localhost:3000/en/trade/BTCUSDT 로 이동합니다.
+4. 브라우저에서 로컬호스트 3000포트로 진입한 후, http://localhost:3000/en/trade/BTCUSDT 로 이동합니다.
 
 # 과제 요구사항
 
