@@ -1,3 +1,6 @@
+
+<img width="1440" alt="Captura de pantalla 2024-12-15 a las 9 21 53 p  m" src="https://github.com/user-attachments/assets/2cbf3674-2b78-4700-8658-3ed6382e16e6" />
+
 # 실행 방법
 1. 레포지토리를 클론합니다
 
