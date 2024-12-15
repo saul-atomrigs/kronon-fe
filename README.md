@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+<img width="1440" alt="Captura de pantalla 2024-12-15 a las 9 21 53 p  m" src="https://github.com/user-attachments/assets/2cbf3674-2b78-4700-8658-3ed6382e16e6" />
 
-First, run the development server:
+# 실행 방법
+1. 레포지토리를 클론합니다
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+git clone https://github.com/saul-atomrigs/kronon-fe-binance-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Dependencies 설치
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. 로컬에서 실행합니다
 
-## Learn More
+```
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. 브라우저에서 로컬호스트 3000포트로 진입한 후, http://localhost:3000/en/trade/BTCUSDT 로 이동합니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 과제 요구사항
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[v] Provide a coin search feature in the coin list.
 
-## Deploy on Vercel
+[v] When clicking on the order book, the input values for buy and sell prices should be applied.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[v] Use a chart library to visually approximate the chart on the Binance page.
