@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import CurrentInfoTable from '@/app/components/CurrentInfoTable';
 import OrderBookComponent from '@/app/components/OrderBookTable';
 import BuySellTable from '@/app/components/BuySellTable';
+import FinancialChart from '@/app/components/Chart';
 
 export default function Page() {
   const [selectedPrice, setSelectedPrice] = useState<number>(0);
@@ -12,7 +13,10 @@ export default function Page() {
       <CurrentInfoTable />
       <div className='flex justify-center items-start gap-4'>
         <OrderBookComponent onPriceSelect={setSelectedPrice} />
-        <BuySellTable selectedPrice={selectedPrice} />
+        <div className='flex flex-col gap-4'>
+          <FinancialChart width={400} />
+          <BuySellTable selectedPrice={selectedPrice} />
+        </div>
       </div>
     </>
   );
