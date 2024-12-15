@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import React, { useState, useEffect } from 'react';
 import mockData from '@/app/mocks/mockOrderBookData.json';
@@ -56,17 +57,22 @@ const OrderBookComponent: React.FC<OrderBookComponentProps> = ({
       </div>
       {/* Asks */}
       <div className='text-red-400 mb-2'>
-        {asks.map((ask, index) => (
-          <div
-            key={index}
-            className='grid grid-cols-3 gap-x-2 cursor-pointer hover:bg-gray-800'
-            onClick={() => handleRowClick(ask.price)}
-          >
-            <div>{ask.price.toFixed(2)}</div>
-            <div>{ask.amount.toFixed(5)}</div>
-            <div>{ask.total.toFixed(2)}K</div>
-          </div>
-        ))}
+        {asks.map(
+          (
+            ask: { price: number; amount: number; total: number },
+            index: React.Key | null | undefined
+          ) => (
+            <div
+              key={index}
+              className='grid grid-cols-3 gap-x-2 cursor-pointer hover:bg-gray-800'
+              onClick={() => handleRowClick(ask.price)}
+            >
+              <div>{ask.price.toFixed(2)}</div>
+              <div>{ask.amount.toFixed(5)}</div>
+              <div>{ask.total.toFixed(2)}K</div>
+            </div>
+          )
+        )}
       </div>
       {/* Last Price */}
       <div className='text-center text-red-500 text-xl font-bold my-2'>
@@ -74,17 +80,22 @@ const OrderBookComponent: React.FC<OrderBookComponentProps> = ({
       </div>
       {/* Bids */}
       <div className='text-green-400'>
-        {bids.map((bid, index) => (
-          <div
-            key={index}
-            className='grid grid-cols-3 gap-x-2 cursor-pointer hover:bg-gray-800'
-            onClick={() => handleRowClick(bid.price)}
-          >
-            <div>{bid.price.toFixed(2)}</div>
-            <div>{bid.amount.toFixed(5)}</div>
-            <div>{bid.total.toFixed(2)}K</div>
-          </div>
-        ))}
+        {bids.map(
+          (
+            bid: { price: number; amount: number; total: number },
+            index: React.Key | null | undefined
+          ) => (
+            <div
+              key={index}
+              className='grid grid-cols-3 gap-x-2 cursor-pointer hover:bg-gray-800'
+              onClick={() => handleRowClick(bid.price)}
+            >
+              <div>{bid.price.toFixed(2)}</div>
+              <div>{bid.amount.toFixed(5)}</div>
+              <div>{bid.total.toFixed(2)}K</div>
+            </div>
+          )
+        )}
       </div>
     </div>
   );
